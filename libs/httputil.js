@@ -1,11 +1,7 @@
 /*
 author: kevin 2019
 */
-var request = require('request');
-
-function Http(domain) {
-    this.domain = domain;
-}
+const request = require('request');
 
 function _build_url(domain, path, params) {
     var url = domain + path;
@@ -35,12 +31,16 @@ function _request(domain, path, params, data, method, callback) {
     });
 }
 
-Http.prototype.get = function (path, params, callback) {
-    _request(this.domain, path, params, null, 'GET', callback);
-}
+module.exports = class HttpUtil {
+    constructor(domain) {
+        this.domain = domain;
+    }
 
-Http.prototype.post = function (path, params, data, callback) {
-    _request(this.domain, path, params, data, 'POST', callback);
-}
+    get(path, params, callback) {
+        _request(this.domain, path, params, null, 'GET', callback);
+    }
 
-module.exports = Http;
+    post(path, params, data, callback) {
+        _request(this.domain, path, params, data, 'POST', callback);
+    }
+}

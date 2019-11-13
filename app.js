@@ -15,8 +15,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cookieParser());
 
-
-var config = require(`./libs/config.default`);
+var config = require(`./config.default`);
 
 var DingTalk = require('./libs/dingtalk');
 var dt = new DingTalk(config);
@@ -28,7 +27,7 @@ var Activity = require('./libs/activity');
 var act = new Activity(config);
 
 var MQLib = require('./libs/mqlib');
-var mq = new MQLib(cfg.mq.connstr);
+var mq = new MQLib(config.mq.connstr);
 
 // 对队列中的发起消息进行消费
 mq.receive(true, (msg) => {

@@ -13,22 +13,6 @@ module.exports = {
         callback_url: 'https://yourdomain.vaiwan.com:8081/callback',// 钉钉不支持同一个企业（corpId）对应多个回调地址
     },
 
-    db: {
-        user: 'sa',
-        password: '',
-        server: '127.0.0.1',
-        database: '[yourdb]',
-        port: 1433,
-        options: {
-            encrypt: true
-        },
-        pool: {
-            min: 0,
-            max: 10,
-            idleTimeoutMillis: 3000
-        }
-    },
-
     mq: {
         connstr: 'amqp://guest:guest@localhost:5672',
     },

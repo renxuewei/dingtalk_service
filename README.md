@@ -1,5 +1,7 @@
 ## 运行环境开发工具
-1. 先安装node（> 8.9）环境
+1. 安装node（> 8.9）环境
+2. 安装redis
+3. 安装rabbitmq
      
 ## 项目配置
 1. 更新config.default.js文件中的配置参数。 
