@@ -1,3 +1,7 @@
+## 项目指南
+1. 钉钉开放了丰富的服务端接口能力，开发者可以借助这些接口能力，实现企业系统与钉钉的集成打通
+2. [钉钉服务端API](https://ding-doc.dingtalk.com/doc#/serverapi2/gh60vz)
+
 ## 运行环境
 1. 安装node（> 8.9）环境
 2. 安装redis
