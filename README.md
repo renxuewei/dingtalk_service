@@ -4,9 +4,9 @@
 3. 安装rabbitmq
      
 ## 项目配置
-1. 更新config.default.js文件中的配置参数。 
-2. 修改libs/activity.js中的业务逻辑。 
-3. 启用穿透本地网络[具体参考钉钉开发文档]
+1. 修改config.default.js中的配置参数。 
+2. 按需修改libs/activity.js中的业务逻辑。 
+3. 启用内网穿透[具体参考钉钉开发文档]
 
 ## 项目运行
 1. npm install
