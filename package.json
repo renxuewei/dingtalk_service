@@ -15,7 +15,7 @@
     "debug": "~2.2.0",
     "dingtalk-node": "^1.2.0",
     "express": "~4.13.1",
-    "lodash": "^4.13.1",
+    "lodash": "^4.17.21",
     "morgan": "~1.6.1",
     "mssql": "^5.1.0",
     "randomstring": "^1.1.5",
